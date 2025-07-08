@@ -1,0 +1,45 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>👋 Hello, there!</h1>
+			<p>
+				Welcome to my portfolio website, I'm Konstantin Kozačišče, a game developer with a passion for <b>graphics programming</b>.
+			</p>
+
+			<p>	
+				Currently I'm pursuing my education at <b>Breda University of Applied Sciences</b> and doing <b>Computer Graphics research</b> at <a href={`https://traverse.nl/`}>Traverse Research</a>.
+			</p>
+
+			<div class="video-wrapper">
+				<iframe
+					width="640"
+					height="360"
+					src="https://www.youtube.com/embed/ggeO1zhbI2Q"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+
+			<p>
+				You can find out more about the projects that I worked on <a href={`/blog`}>here</a>
+			</p>
+
+			
+		</main>
+		<Footer />
+	</body>
+</html>
