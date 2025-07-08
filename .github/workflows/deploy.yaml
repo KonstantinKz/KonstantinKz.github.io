@@ -19,7 +19,8 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          working-directory: ./astro-portfolio
+          path: astro-portfolio
+          package-manager: npm
 
   deploy:
     needs: build
