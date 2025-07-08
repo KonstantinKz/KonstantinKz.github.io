@@ -61,4 +61,29 @@ const base = import.meta.env.BASE_URL;
 			display: none;
 		}
 	}
+	@media (max-width: 540px) {
+		h2 {
+			font-size: 95%;
+		}
+		.internal-links {
+			font-size: 95%;
+		}
+	}
+	@media (max-width: 475px) {
+		h2{
+			font-size: 85%;
+		}
+		.internal-links {
+			font-size: 85%;
+		}
+	}
+	@media (max-width: 410px) {
+		h2{
+			display: none;
+		}
+		.internal-links {
+			font-size: 95%;
+		}
+	}
+}
 </style>
